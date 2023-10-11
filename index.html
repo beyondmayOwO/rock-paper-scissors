@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <div>Rock Paper Scissors!</div>
+
+  <script>
+    // GET COMPUTER'S CHOICE
+    /*
+    - function getComputerChoice
+    - randomly returns 'Rock', 'Paper', 'Scissors'
+    */
+
+    function getComputerChoice() {
+      const choices = ['Rock', 'Paper', 'Scissors'];
+      const randomIndex = Math.floor(Math.random() * 3);
+      return choices[randomIndex];
+    }
+
+    // PLAY A SINGLE ROUND
+    /*
+    - function playRound ==> two parameters ==> playerSelection, computerSelection
+    - Convert playerSelection and computerSlection to lowercase for case-insensitivity.
+    - Compare playerSelection with computerSelection
+    - returns a string declaring winner and loser
+    */
+
+    function playRound(playerSelection, computerSelection) {
+      playerSelection = playerSelection.toLowerCase();
+      computerSelection = computerSelection.toLowerCase();
+
+      if (playerSelection === computerSelection) {
+        return "It's a tie!";
+      }
+      else if ()
+    }
+
+    // PLAY 5 ROUNDS
+    /*
+    - set userSccore and computerScore to 0
+    - loop for 5 rounds ==> inside loop ==> all the prompts, update the scores
+    -
+    */
+
+    // DISPLAY FINAL SCORE AND WINNER
+    // START THE GAME
+  </script>
+</body>
+</html>
