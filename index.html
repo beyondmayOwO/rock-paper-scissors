@@ -55,8 +55,49 @@
     -
     */
 
-    // DISPLAY FINAL SCORE AND WINNER
+    function game() {
+      let userScore = 0;
+      let computerScore = 0;
+
+      for (let i = 0; i < 5; i++) {
+        const playerChoice = prompt("Enter your choice (Rock, Paper, or Scissors):");
+        const computerChoice = getComputerChoice();
+
+        const result = playRound(playerChoice, computerChoice);
+
+        console.log(`Round ${i + 1}\n----------`);
+        console.log(`You chose ${playerChoice}`);
+        console.log(`Computer chose ${computerChoice}`);
+        console.log(result);
+
+        if (result.includes('win')) {
+          userScore++;
+        }
+        else if (result.includes('lose')) {
+          computerScore++;
+        }
+      }
+      // DISPLAY FINAL SCORE AND WINNER
+
+      console.log("\nGame Over!\n");
+      console.log("Final Score\n----------");
+      console.log(`You: ${userScore}`);
+      console.log(`Computer: ${computerScore}`);
+
+      if(userScore > computerScore) {
+        console.log("Congratulations! You win the game!");
+      }
+      else if (computerScore > userScore) {
+        console.log("You lose :( Computer wins!");
+      }
+      else {
+        console.log("It's a tie! No one wins!");
+      }
+    }
+
     // START THE GAME
+
+    game();
   </script>
 </body>
 </html>
