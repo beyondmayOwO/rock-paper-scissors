@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
   <title>Rock Paper Scissors</title>
 </head>
 <body>
-  <div>Rock Paper Scissors!</div>
+  <div class="main-heading">Rock Paper Scissors!</div>
+  <div class="sub-heading-1">You Vs Computer</div>
+  <div class="sub-heading-2">Ready?</div>
 
-  <script>
+  <div class="playground">
+    <div class="selection">
+      <img class="selection-image" src="./fist.png" alt="rock image">
+      <button class="selection-button">Rock</button>
+    </div>
+
+    <div class="selection">
+      <img class="selection-image" src="./hand.png" alt="paper image">
+      <button class="selection-button">Paper</button>
+    </div>
+
+    <div class="selection">
+      <img class="selection-image" src="./rock-paper-scissors.png" alt="scissors image">
+      <button class="selection-button">Scissors</button>
+    </div>
+  </div>
+  <!--<script>
     // GET COMPUTER'S CHOICE
 
     function getComputerChoice() {
@@ -69,7 +88,7 @@
           computerScore++;
         }
       }
-      
+
       // DISPLAY FINAL SCORE AND WINNER
 
       console.log("\nGame Over!\n");
@@ -91,6 +110,6 @@
     // START THE GAME
 
     game();
-  </script>
+  </script>-->
 </body>
 </html>
