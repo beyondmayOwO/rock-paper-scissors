@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
-/*font-family: 'Caveat', cursive;
-font-family: 'Roboto', sans-serif;*/
 
 body {
   margin: 0;
@@ -31,14 +29,14 @@ body {
   justify-content: center;
   font-family: 'Caveat', cursive;
   font-size: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .playground {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-top: 200px;
+  margin-top: 35px;
 }
 
 .selection {
@@ -59,4 +57,44 @@ body {
   font-family: 'Roboto', sans-serif;
   border: none;
   font-size: 20px;
+}
+
+.result-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.result-contents {
+  border: 3px solid rgb(41, 41, 41);
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 30px;
+}
+
+.result {
+  font-size: 18px;
+}
+
+.score {
+  color: rgb(49, 49, 49);
+}
+
+.winner {
+  font-size: 20px;
+  color: rgb(80, 39, 39);
+}
+
+.restart {
+  border-radius: 10px;
+  width: 70px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  font-size: 15px;
+  margin-top: 20px;
 }

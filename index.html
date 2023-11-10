@@ -11,105 +11,29 @@
   <div class="sub-heading-1">You Vs Computer</div>
   <div class="sub-heading-2">Ready?</div>
 
+  <div class="result-section">
+    <div class="result-contents">
+      
+    </div>
+  </div>
+
   <div class="playground">
     <div class="selection">
       <img class="selection-image" src="./images/fist.png" alt="rock image">
-      <button class="selection-button">Rock</button>
+      <button class="selection-button rock-button">Rock</button>
     </div>
 
     <div class="selection">
       <img class="selection-image" src="./images/hand.png" alt="paper image">
-      <button class="selection-button">Paper</button>
+      <button class="selection-button paper-button">Paper</button>
     </div>
 
     <div class="selection">
       <img class="selection-image" src="./images/rock-paper-scissors.png" alt="scissors image">
-      <button class="selection-button">Scissors</button>
+      <button class="selection-button scissors-button">Scissors</button>
     </div>
   </div>
-  <!--<script>
-    // GET COMPUTER'S CHOICE
 
-    function getComputerChoice() {
-      const choices = ['Rock', 'Paper', 'Scissors'];
-      const randomIndex = Math.floor(Math.random() * 3);
-      return choices[randomIndex];
-    }
-
-    // PLAY A SINGLE ROUND
-
-    function playRound(playerSelection, computerSelection) {
-      playerSelection = playerSelection.toLowerCase();
-      computerSelection = computerSelection.toLowerCase();
-
-      if (playerSelection === computerSelection) {
-        return "It's a tie!";
-      }
-      else if (
-        (playerSelection === 'rock' && computerSelection === 'scissors') ||
-        (playerSelection === 'paper' && computerSelection === 'rock') ||
-        (playerSelection === 'scissors' && computerSelection === 'paper')
-      ) {
-        return `You win! ${playerSelection} beats ${computerSelection}`;
-      }
-      else {
-        return `You lose! ${computerSelection} beats ${playerSelection}`;
-      }
-    }
-
-    // PLAY 5 ROUNDS
-
-    function game() {
-
-      // SETTING USERSCORE AND COMPUTERSCORE TO 0
-
-      let userScore = 0;
-      let computerScore = 0;
-
-      // LOOP FOR 5 ROUNDS
-
-      for (let i = 0; i < 5; i++) {
-        const playerChoice = prompt("Enter your choice (Rock, Paper, or Scissors):");
-        const computerChoice = getComputerChoice();
-
-        const result = playRound(playerChoice, computerChoice);
-
-        console.log(`Round ${i + 1}\n----------`);
-        console.log(`You chose ${playerChoice}`);
-        console.log(`Computer chose ${computerChoice}`);
-        console.log(result);
-
-        // UPDATE THE SCORES
-
-        if (result.includes('win')) {
-          userScore++;
-        }
-        else if (result.includes('lose')) {
-          computerScore++;
-        }
-      }
-
-      // DISPLAY FINAL SCORE AND WINNER
-
-      console.log("\nGame Over!\n");
-      console.log("Final Score\n----------");
-      console.log(`You: ${userScore}`);
-      console.log(`Computer: ${computerScore}`);
-
-      if(userScore > computerScore) {
-        console.log("Congratulations! You win the game!");
-      }
-      else if (computerScore > userScore) {
-        console.log("You lose :( Computer wins!");
-      }
-      else {
-        console.log("It's a tie! No one wins!");
-      }
-    }
-
-    // START THE GAME
-
-    game();
-  </script>-->
+  <script src="./script.js"></script>
 </body>
 </html>
